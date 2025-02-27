@@ -28,7 +28,6 @@
     <!-- header -->
     <div class="header">
         <img src="img/header.jpg" width="100%">
-        
      </div>
     <!-- navbar -->
     <nav>
@@ -51,21 +50,21 @@
         <h1 style="margin: 24px;padding: 16px;border-bottom: 1px solid black;">GAMEGUIDE</h1>
         <div class="home">
             <div class="type" onmouseover="mountainHover(mountain)" onmouseout="mountainOut(mountain)" id="mountain">
-                <a href="index.php">
+                <a href="gameguide-content.html">
                     <p></p>
                     <img src="img/home/3game.jpg">
                 </a>
             </div>
         
             <div class="type" onmouseover="templeHover(temple)" onmouseout="templeOut(temple)" id="temple">
-                <a href="index.php">
+                <a href="gameguide-content.html">
                     <p></p>
                     <img src="img/home/4game.jpg">
                 </a>
             </div>
         
             <div class="type" onmouseover="waterfallHover(waterfall)" onmouseout="waterfallOut(waterfall)" id="waterfall">
-                <a href="index.php">
+                <a href="gameguide-content.html">
                     <p></p>
                     <img src="img/home/2game.jpg">
                 </a>
@@ -76,8 +75,8 @@
         <div class="blog-news">
             <!-- heading -->
             <div style="width:100%; float: left;">
-                <h4 style="padding: 16px;border-left: 10px solid #ff9100ea;">
-                <div style="color:#ff9100ea;;display:inline;">GAMEGUIDE</div></h4>
+                <h4 style="padding: 16px;border-left: 10px solid #22a800;">
+                <div style="color:#22a800;;display:inline;">GAMEGUIDE</div></h4>
             </div>
         <!-- news -->
         <div style="width:100%; float: left;">
@@ -111,34 +110,32 @@
             </div>
         </div>
     </div>
-
     <!-- footer -->
-    <a href="comment.html" style="text-decoration: none; color: #333333;">
-        <div class="comment">
+    <div class="comment">
+        <a href="comment.html" style="text-decoration: none; color: #333333;">
             <h2 style="border-bottom:1px solid rgba(0,0,0,0.1);padding-bottom:2%;">Comment</h2>
         </a>
-                    <!-- othercomment/signed in -->
-                    <div class="eachComment">
-                        <div class="Comment-Name">CrowMualer</div>
-                        <div class="Comment-Content">ข่าวดีมีคุณภาพ </div>
-                    </div>
-                    <div class="eachComment">
-                        <div class="Comment-Name">KumaHy</div>
-                        <div class="Comment-Content">ขอสาระได้สาหร่าย</div>
-                    </div>
-                    <div class="eachComment">
-                        <div class="Comment-Name">อยากขี่เบลล์</div>
-                        <div class="Comment-Content">สาระแน</div>
-                    </div>
-                        <br>           
-                        <a href="Login.html" style="text-decoration: none; color: #333333;">
-                            <!-- didn't sign in -->
-                            <form action="" method="post" class="actionComment-Form">
-                                <div class="pls-signin">Please Login to comment</div>
-                            </form>
-                        </a>                
+    <!-- othercomment/signed in -->
+        <div class="eachComment">
+            <div class="Comment-Name">CrowMualer</div>
+            <div class="Comment-Content">ข่าวดีมีคุณภาพ </div>
         </div>
-        
+        <div class="eachComment">
+            <div class="Comment-Name">KumaHy</div>
+            <div class="Comment-Content">ขอสาระได้สาหร่าย</div>
+        </div>
+        <div class="eachComment">
+            <div class="Comment-Name">อยากขี่เบลล์</div>
+            <div class="Comment-Content">สาระแน</div>
+        </div>
+        <br>    
+        <!-- didn't sign in -->
+        <a href="signin.html" style="text-decoration: none; color: #333333;">
+            <form action="" method="post" class="actionComment-Form">
+                <div class="pls-signin">Please Signin to comment</div>
+            </form>
+        </a>
+    </div>
     <!-- Java Script -->
     <script src="js/script.js"></script>
 </body>
