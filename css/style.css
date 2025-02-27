@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    outline: none;
+    font-family: 'Mitr', monospace;
+
+}
+
+.header{
+    margin: 0;
+}
+nav {
+    
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    border-bottom: 0px;
+    z-index: 99;
+    background-color: #333333;
+    /* border-bottom: 5px solid #fffb00;  */
+}
+.nav-left,.nav-right{
+    padding: 14px 16px;
+    width: 15%;
+    float: left;
+}
+nav a{
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #333333
+}
+ nav a:hover{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: #333333;
+}
+.nav-logo {
+    padding: 14px 24px 14px;
+    background-color: #333333;
+    color: white;
+} 
+/* main-content */
+.main-content{
+    float: left;
+    width: 80%;
+    
+}
+.header-content{
+    width: 100%;
+    
+}
+
+.left-content, .right-content{
+    float: left;
+    width: 10%;
+    padding: 15px;
+}
+
+.home-news{
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+}
+.home-news img{
+    width: 20%;
+    float:left;
+}
+.home-news h4{
+    width: 40%;
+    float: left;
+    padding-left: 16px;
+}
+.blog-news{
+    float: left;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* news-card */
+    .news-card {
+        z-index: -1;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        width: 28%;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        margin: 1% 2%;
+        float: left;
+    }
+    .news-card a{
+        text-decoration: none;
+        color: black;
+    }
+    .news-card:hover {
+        box-shadow: 0 16px 32px 0 rgba(0,0,0,0.8);
+    }
+  
+    .news-card img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        object-position: 100% 50%;
+        object-fit: fill;
+    }
+  
+    .news-container {
+        padding: 12px 24px;
+    }
+
+.footer{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    /* background-color: rgba(238, 11, 11, 0.979); */
+}
+
+.side-header{
+    height: 100%;
+    width: 45%;
+    float: left;
+    overflow: hidden;
+    
+}
+.sign-in{
+    float: left;
+    text-align: center;
+    padding-top: 20%;
+    width: 55%;
+}
+
+.sign-in-form input{
+    border: 0;
+    border-radius: 5px;
+    padding: 4px 8px;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+.sign-in-form button{
+    text-align: center;
+    border:0;
+    border-radius: 5px;
+    padding: 12px 32px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+.content-header{
+    
+    margin: 24px;
+    padding: 16px;
+}
+.news-content{
+    padding-top:16px;
+}
+
+/* comment */
+.comment{
+    float: left;
+    width: 90%;
+    margin: 5%;
+    padding: 1%;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+
+.eachComment{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1%;
+    margin: 1%;
+}
+.Comment-Name{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Comment-Content{
+    padding: 1% 2%;
+    width: 100%;
+    font-size: 18px;
+}
+
+@keyframes Top {
+    0%{
+        transform: translateY(-500%)
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes Left {
+    0%{
+        transform: translateX(-500%);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+.home{
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+}
+.content-header{
+    text-align: start;
+    color:black;
+    font-size: 24px;
+    width:100%;
+    margin: 85px;
+    padding: 60px;
+}
+.type{
+    float: left;
+    position: relative;
+    width: 33%;
+    height:100%;
+    overflow: hidden;
+    transition: width 2s;
+}
+/* animation */
+@keyframes disappear {
+    from {width: 25%;}
+    to {width: 0%;}
+  }
+@keyframes return{
+    from {width:0%;}
+    to {width: 25%;}
+}
+.disappear{
+    animation-name: disappear;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.return{
+    animation-name: return;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+/* slide */
+/* .mySlides {display: none} */
+.mySlides img {
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    float: left;
+    padding: 2%;
+    width: 55%;
+    position: relative;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 3%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.side-news{
+    width: 45%;
+    padding: 2%;
+    float: left;
+}
+.side-news-content{
+    float: left;
+    padding: 2%;
+}
+.side-news-content img{
+    width: 35%;
+    float: left;
+    border-radius: 6px;
+}
+.side-news-content h4{
+    width: 65%;
+    padding: 2%;
+    float: left;
+}
